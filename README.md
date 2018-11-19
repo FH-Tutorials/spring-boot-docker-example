@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/ExampleDriven/spring-boot-docker-example.svg?branch=master)](https://travis-ci.org/ExampleDriven/spring-boot-docker-example)
 # spring-boot-docker-example
 
-This is the source code for the blog post
+This is the source code based on that blog post
 
 https://exampledriven.wordpress.com/2016/06/24/spring-boot-docker-example/
 
