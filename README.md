@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/ExampleDriven/spring-boot-docker-example.svg?branch=master)](https://travis-ci.org/ExampleDriven/spring-boot-docker-example)
+This example shows how to create a “microservice ecosystem” from dockerized spring boot applications. 
+
 # spring-boot-docker-example
 
 This is the source code based on that blog post
