@@ -1,0 +1,28 @@
+server:
+  port: ${server_port:9098}
+
+service:
+  location: http://gturnquist-quoters.cfapps.io/api/random
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: ${eureka_url:http://eureka-server:8761/eureka/}
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+spring:
+  application:
+    name: quoting-service
+  devtools:
+    remote:
+      secret: mysecret
+
+management:
+  security:
+    enabled: false
