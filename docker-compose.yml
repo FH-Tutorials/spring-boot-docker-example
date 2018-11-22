@@ -11,6 +11,13 @@ services:
     deploy:
       mode: replicated
       replicas: 2
+  quoting-service:
+    image: quoting-service
+    depends_on:
+     - eureka-server
+    deploy:
+      mode: replicated
+      replicas: 2
   zuul-server:
     image: zuul-server
     depends_on:

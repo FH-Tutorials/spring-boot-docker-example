@@ -91,8 +91,8 @@
                             <goal>build</goal>
                         </goals>
                     </execution>
-		 </executions>
-		 <dependencies>
+				</executions>
+		 		<dependencies>
                     <dependency>
                         <groupId>javax.activation</groupId>
                         <artifactId>activation</artifactId>
