@@ -15,9 +15,6 @@ zuul:
     echo-by-dns:
       path: /echo-service-by-dns/**
       url: http://echo-service:9098
-    quoting-service:
-      path: /quoting-service/**
-      url: http://quoting-service:9098
 
 spring:
   application:
