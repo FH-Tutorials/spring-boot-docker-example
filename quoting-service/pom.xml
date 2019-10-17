@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Echo Service</name>
+    <name>Quoting Service</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

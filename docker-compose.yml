@@ -4,23 +4,19 @@ services:
     image: eureka-server
     ports:
      - "8761:8761"
-  echo-service:
-    image: echo-service
-    depends_on:
-     - eureka-server
-    deploy:
-      mode: replicated
-      replicas: 2
-  quoting-service:
-    image: quoting-service
-    depends_on:
-     - eureka-server
-    deploy:
-      mode: replicated
-      replicas: 2
   zuul-server:
     image: zuul-server
     depends_on:
      - eureka-server
     ports:
      - "9090:9090"
+  echo-service:
+    image: echo-service
+    depends_on:
+     - eureka-server
+     - zuul-server
+  quoting-service:
+    image: quoting-service
+    depends_on:
+     - eureka-server
+     - zuul-server
